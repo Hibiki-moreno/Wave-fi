@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0f0f;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #formulario {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    animation: fadeInUp 1s ease forwards, rainbow-border-start 3s infinite linear alternate;
+  }
+  button {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #272727;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  
+  }
+
+   
+  input[type="text"],
+  input[type="number"]{
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #272727;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid #00b4ff;
+    animation:rainbow-border-focus 3s infinite linear alternate;
+
+  }
+ 
+  
+  input[type="text"],:focus
+  input[type="number"] :focus{
+    border: 2px solid #00b4ff;
+    animation:rainbow-border-focus 3s infinite linear alternate;
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: #00b4ff;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0095e0;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes rainbow-border-start {
+    0% {
+      border-color: #FF00FF; /* Rosa */
+    }
+    14.28% {
+      border-color: #8A2BE2; /* Lila */
+    }
+    28.56% {
+      border-color: #FF0000; /* Rojo */
+    }
+    42.84% {
+      border-color: #00FF00; /* Verde */
+    }
+    57.12% {
+      border-color: #FFFF00; /* Amarillo */
+    }
+    71.4% {
+      border-color: #00BFFF; /* Azul clarito */
+    }
+    85.68% {
+      border-color: #FF00FF; /* Rosa */
+    }
+    100% {
+      border-color: #FF00FF; /* Rosa */
+    }
+  }
+  
+  @keyframes rainbow-border-focus {
+    0% {
+      border-color: #FF00FF; /* Rosa */
+    }
+    14.28% {
+      border-color: #8A2BE2; /* Lila */
+    }
+    28.56% {
+      border-color: #FF0000; /* Rojo */
+    }
+    42.84% {
+      border-color: #00FF00; /* Verde */
+    }
+    57.12% {
+      border-color: #FFFF00; /* Amarillo */
+    }
+    71.4% {
+      border-color: #00BFFF; /* Azul clarito */
+    }
+    85.68% {
+      border-color: #FF00FF; /* Rosa */
+    }
+    100% {
+      border-color: #FF00FF; /* Rosa */
+    }
+  }
+  

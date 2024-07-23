@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../Server"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Wave-fi"
+	}
+}
